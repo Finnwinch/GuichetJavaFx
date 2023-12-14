@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leo.cirpaci.guichet.ControllerGestion">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="identifiantDisplay" alignment="CENTER" text="IDENTIFIANT COMPTE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#NouveauUtilisateurDoClick" prefWidth="130.0" text="Nouveau Utilisateur">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#FermerGuichetDoClick" prefHeight="26.0" prefWidth="130.0" text="Fermer Guichet" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#NouveauCompteDoClick" prefWidth="130.0" text="Nouveau Compte">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#PayerInteretEpargne" prefWidth="130.0" text="Payer Intéret Épargne" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding></HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" onAction="#GetTransactionDoClick" prefWidth="130.0" text="Afficher Transactions">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#PreleverHypo" prefWidth="130.0" text="Prelever Hypotheque" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#BlockCompte" prefWidth="130.0" text="Bloquer Utilisateur">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AugmenterCredit" prefWidth="130.0" text="Augmenter Crédit" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding></HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#RemplireDistributeur" prefWidth="130.0" text="Remplire Distributeur">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DeconnexionDoClick" prefWidth="130.0" text="Deconnexion" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding></HBox>
+   </children>
+</VBox>
